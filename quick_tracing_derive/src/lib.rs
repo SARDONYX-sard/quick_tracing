@@ -27,9 +27,11 @@ struct LoggerBuilder {
 /// - `test`: Sets the test name for the logger. Log output will be written to a file named `../../logs/{test_name}.log`.
 /// - `file`: Sets the file path for the log output.
 /// - `stdio`: Enables standard I/O output for the logger.(default: true)
-/// - `level`: Sets the log level filter (e.g., `TRACE`, `DEBUG`, `INFO`, `WARN`, `ERROR`).
+/// - `level`: Sets the log level filter (e.g., `TRACE`, `DEBUG`, `INFO`, `WARN`, `ERROR`. default: `TRACE`).
 ///
 /// # Examples
+///
+/// - Trace mode + stdio
 ///
 /// ```ignore
 /// #[quick_tracing::init]
