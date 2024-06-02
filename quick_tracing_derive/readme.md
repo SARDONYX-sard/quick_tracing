@@ -5,7 +5,7 @@ This is derive. See [quick_tracing](https://crates.io/crates/quick_tracing)
 Need to write the following it in Cargo.toml
 
 ```toml
-quick_tracing_derive = { version = "0.1.1" }
+quick_tracing_derive = { version = "0.1.2" }
 ```
 
 ## Attributes
