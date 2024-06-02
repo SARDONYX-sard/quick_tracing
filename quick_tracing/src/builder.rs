@@ -48,7 +48,7 @@ impl LoggerBuilder {
     /// Sets the test name for the logger.
     ///
     /// If a test name is provided, log output will be written to a file
-    /// named `../../logs/{test_name}.log`.
+    /// named `../logs/{test_name}.log`.
     ///
     /// # Examples
     /// ```
@@ -57,10 +57,10 @@ impl LoggerBuilder {
     /// ```
     ///
     /// # Errors
-    /// Failed to create a directory: `"../../logs"`
+    /// Failed to create a directory: `"../logs"`
     pub fn test_name(mut self, test_name: &str) -> io::Result<Self> {
-        fs::create_dir_all("../../logs")?;
-        self.output_file = Some(format!("../../logs/{test_name}.log"));
+        fs::create_dir_all("../logs")?;
+        self.output_file = Some(format!("../logs/{test_name}.log"));
         Ok(self)
     }
 
