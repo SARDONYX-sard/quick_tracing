@@ -5,3 +5,7 @@
 # Rust build cache
 **/target
 **/log/
+
+# When end users use the library, the Cargo.lock of the internal library is not needed because it is never checked.
+# https://stackoverflow.com/questions/62861623/should-cargo-lock-be-committed-when-the-crate-is-both-a-rust-library-and-an-exec
+**/Cargo.lock
