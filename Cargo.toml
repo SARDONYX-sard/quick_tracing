@@ -4,6 +4,8 @@ version = "0.1.0"
 license = "MIT"
 description = "A simple library to easily start tracing."
 repository = "https://github.com/SARDONYX-sard/quick_tracing" # NOTE: Without it, CLI & CI build will error.
+documentation = "https://docs.rs/quick_tracing"
+homepage = "https://github.com/SARDONYX-sard/quick_tracing"
 rust-version = "1.69"
 edition = "2021"
 

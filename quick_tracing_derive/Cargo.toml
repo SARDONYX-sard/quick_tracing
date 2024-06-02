@@ -6,6 +6,9 @@ authors.workspace = true
 version.workspace = true
 license.workspace = true
 repository.workspace = true
+keywords = ["tracing", "init", "derive"]
+autobenches = true
+include = ["./src/", "../LICENSE*", "./readme.md"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -13,6 +16,6 @@ repository.workspace = true
 proc-macro = true
 
 [dependencies]
-syn = { version = "2.0.63", features = ["full", "extra-traits"] }
+deluxe = "0.5.0"             # attribute macro easy build
 quote = "1.0.36"
-deluxe = "0.5.0"                                                  # attribute macro easy build
+syn = { version = "2.0.63" }
