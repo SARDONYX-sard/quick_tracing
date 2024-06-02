@@ -35,4 +35,4 @@ pub fn init() -> io::Result<(Option<WorkerGuard>, DefaultGuard)> {
 }
 
 #[cfg(feature = "derive")]
-pub use quick_tracing_derive::init;
+pub use quick_tracing_derive::{init, try_init};
