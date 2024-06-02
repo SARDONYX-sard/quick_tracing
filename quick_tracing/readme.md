@@ -63,3 +63,15 @@ fn main() {
     tracing::debug!("Hello, world!");
 }
 ```
+
+- non panic + Debug mode + Output file
+
+  If there is no parent directory, it will automatically create one.
+
+```rust
+#[quick_tracing::try_init(level= "DEBUG", file = "./log/test.log", stdio = false)]
+fn main() -> std::io::Result<()> {
+    tracing::debug!("Hello, world!");
+    Ok(())
+}
+```
