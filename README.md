@@ -9,8 +9,8 @@ tracing initialization library to easily get started with tracing.
     <a href="https://github.com/SARDONYX-sard/quick_tracing/actions/workflows/build-and-test.yml">
         <img src="https://github.com/SARDONYX-sard/quick_tracing/actions/workflows/build-and-test.yml/badge.svg" alt="Build & Test">
     </a>
-    <a href="https://github.com/SARDONYX-sard/dar-to-oar/actions/workflows/release.yaml">
-        <img src="https://github.com/SARDONYX-sard/quick_tracing/actions/workflows/release.yaml/badge.svg" alt="Release Cli">
+    <a href="https://github.com/SARDONYX-sard/quick_tracing/actions/workflows/release.yaml">
+        <img src="https://github.com/SARDONYX-sard/quick_tracing/actions/workflows/release.yaml/badge.svg" alt="Release">
     </a>
     <a href="https://opensource.org/licenses/MIT">
         <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License">
