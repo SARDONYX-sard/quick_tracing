@@ -178,7 +178,9 @@ pub fn try_init(
     let file = file.map_or(quote! {}, |path| {
         quote! {
             .file({
-                std::path::Path::new(#path).parent().map(|dir| std::fs::create_dir_all(dir))?;
+                if let Some(dir) = std::path::Path::new(#path).parent() {
+                    std::fs::create_dir_all(dir)?;
+                };
                 #path
             })
         }
