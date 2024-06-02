@@ -32,14 +32,9 @@ impl Default for LoggerBuilder {
 impl LoggerBuilder {
     /// Creates a new `LoggerBuilder` with stdio
     ///
-    /// By default:
-    /// - `output_file`: None
-    /// -  `with_stdio`: `true`
-    /// -      `filter`: `LevelFilter::TRACE`
-    ///
     /// # Examples
     ///
-    /// ```
+    /// ```rust
     /// let builder =  quick_tracing::builder::LoggerBuilder::new();
     /// ```
     pub const fn new() -> Self {
@@ -88,7 +83,7 @@ impl LoggerBuilder {
     /// # Examples
     ///
     /// ```
-    /// let builder = LoggerBuilder::new().stdio();
+    /// let builder = quick_tracing::builder::LoggerBuilder::new().stdio();
     /// ```
     pub fn stdio(mut self) -> Self {
         self.with_stdio = true;

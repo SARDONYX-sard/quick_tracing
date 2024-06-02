@@ -20,7 +20,7 @@ use tracing_appender::non_blocking::WorkerGuard;
 ///
 /// # Examples
 /// ```
-/// fn main() -> std:io::Result<()> {
+/// fn main() -> std::io::Result<()> {
 ///     let _guard = quick_tracing::init()?;
 ///     tracing::info!("Hey!");
 ///     Ok(())
@@ -31,7 +31,7 @@ use tracing_appender::non_blocking::WorkerGuard;
 /// Guards
 /// - If this variable is dropped, the logger stops.
 pub fn init() -> io::Result<(Option<WorkerGuard>, DefaultGuard)> {
-    Ok(builder::LoggerBuilder::default().build()?)
+    builder::LoggerBuilder::default().build()
 }
 
 #[cfg(feature = "derive")]

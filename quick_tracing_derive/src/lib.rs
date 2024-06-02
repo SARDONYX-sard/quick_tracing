@@ -31,7 +31,7 @@ struct LoggerBuilder {
 ///
 /// # Examples
 ///
-/// ```edition2021:no-run
+/// ```ignore
 /// #[quick_tracing::init]
 /// fn main() {
 ///     tracing::debug!("Hello, world!");
@@ -40,7 +40,7 @@ struct LoggerBuilder {
 ///
 /// - Debug mode + Output file(If there is no parent directory, it will automatically create one.)
 ///
-/// ```edition2021:no-run
+/// ```ignore
 /// #[quick_tracing::init(level= "DEBUG", file = "./log/test.log", stdio = false)]
 /// fn main() {
 ///     tracing::debug!("Hello, world!");
