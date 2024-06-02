@@ -8,7 +8,6 @@ license.workspace = true
 repository.workspace = true
 keywords = ["tracing", "init", "derive"]
 autobenches = true
-include = ["./src/", "../LICENSE*", "./readme.md"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

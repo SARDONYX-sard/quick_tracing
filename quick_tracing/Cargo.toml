@@ -9,7 +9,7 @@ repository.workspace = true
 documentation.workspace = true
 homepage.workspace = true
 keywords = ["tracing", "init"]
-include = ["./src/", "../LICENSE*", "../README.md"]
+include = ["src/", "readme.md", "examples/"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
