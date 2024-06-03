@@ -31,7 +31,7 @@ fn main() -> std:io::Result<()> {
 Need to write the following it in Cargo.toml
 
 ```toml
-features = ["derive"]
+quick_tracing = { version = "0.1.5", features = ["derive"] }
 ```
 
 ### Attributes

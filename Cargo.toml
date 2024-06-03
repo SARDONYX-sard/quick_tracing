@@ -1,6 +1,6 @@
 [workspace.package]
 authors = ["SARDONYX"]
-version = "0.1.4"
+version = "0.1.5"
 license = "MIT"
 description = "A simple library to easily start tracing."
 repository = "https://github.com/SARDONYX-sard/quick_tracing" # NOTE: Without it, CLI & CI build will error.
