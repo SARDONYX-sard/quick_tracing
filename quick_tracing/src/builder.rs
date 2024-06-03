@@ -17,7 +17,8 @@ pub struct LoggerBuilder {
 }
 
 impl Default for LoggerBuilder {
-    /// - only console output.
+    /// std I/O Only
+    /// - wtiH_stdio: true
     /// - Level: TRACE
     /// - output file: None
     fn default() -> Self {
@@ -30,7 +31,7 @@ impl Default for LoggerBuilder {
 }
 
 impl LoggerBuilder {
-    /// Creates a new `LoggerBuilder` with stdio
+    /// Creates a new `LoggerBuilder`(No output at this point.)
     ///
     /// # Examples
     ///
@@ -40,7 +41,7 @@ impl LoggerBuilder {
     pub const fn new() -> Self {
         LoggerBuilder {
             output_file: None,
-            with_stdio: true,
+            with_stdio: false,
             filter: LevelFilter::TRACE,
         }
     }
